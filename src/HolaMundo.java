@@ -16,10 +16,12 @@ public class HolaMundo  {
         System.out.println("Numero de llantas Auto :"+auto.getNumeroLlantas());
         auto.lavarVehiculo();
 
-        Motocicleta moto=new Motocicleta();
+        //nueva Instancia Motocileta
+	Motocicleta moto=new Motocicleta();
         System.out.println("Moto numero de llantas:"+moto.getNumeroLlantas());
         moto.lavarVehiculo();
 
+	//bloque try
         try {
             Auto auto2 = new Auto("UTS3547");
             System.out.println("Placa :"+auto2.getPlaca());
