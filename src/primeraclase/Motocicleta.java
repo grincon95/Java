@@ -1,5 +1,7 @@
 package primeraclase;
 
+import primeraclase.excepciones.PlacaInvalidaException;
+
 public class Motocicleta extends Vehiculo {
 
 private String placa;
@@ -24,6 +26,8 @@ private String placa;
             /*Lanzar o arojar un error*/
             throw new PlacaInvalidaException("Invalida");
         }
+
+
     }
 
 

@@ -7,6 +7,7 @@ public class HolaMundo  {
 
     public static void main(String[] args) throws Exception
     {
+
         System.out.println("Hola mundo");
 
 
@@ -34,8 +35,14 @@ public class HolaMundo  {
 
         }//fin del finally
 
+        String s1="Hola Mundo";
+        String s2="Hola mundo";
+
+        System.out.println(s1.equals(s2));
+
 
     }
+
 
 
 

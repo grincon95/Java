@@ -17,7 +17,7 @@ public class Auto extends Vehiculo {
 
     /*Constructor debe tener el mismo nombre de la clase para Inicializar variables */
     public Auto(String placa) throws PlacaInvalidaException {
-placa=placa.replaceAll(" ","");
+            placa=placa.replaceAll(" ","");
 
         /*Validar tamaño de la placa con operadores de corto circuito*/
         if ( placa.length()==7 || placa.length()==8) {
