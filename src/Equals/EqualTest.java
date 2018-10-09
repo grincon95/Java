@@ -16,6 +16,8 @@ public class EqualTest {
 
         System.out.println(p1.equals(p2));
 
+        System.out.println(p1.hashCode());
+
     }//fin del main
 
 
