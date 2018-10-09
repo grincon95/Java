@@ -4,6 +4,7 @@ public class Dvd implements Comparable<Dvd>{
     private String titulo;
     private String genero;
     private String protagonista;
+    private String director;
 
 
     //contructor default
@@ -12,6 +13,7 @@ public class Dvd implements Comparable<Dvd>{
         titulo="";
         genero="";
         protagonista="";
+        director="";
     }
 
     public Dvd (String titulo) {
@@ -28,6 +30,11 @@ public class Dvd implements Comparable<Dvd>{
         this.protagonista=protagonista;
     }
 
+    public Dvd(String titulo,String genero,String protagonista,String director){
+        this(titulo,genero,protagonista);
+        this.director=director;
+    }
+
     @Override
     public int compareTo(Dvd o){
         return titulo.compareTo(o.titulo);
@@ -39,7 +46,7 @@ public class Dvd implements Comparable<Dvd>{
 @Override
     public String toString(){
 
-        return getTitulo()+"-"+ genero +"-"+ getProtagonista();
+        return getTitulo()+"-"+ genero +"-"+ getProtagonista() +"-"+ getDirector();
     }
 
 
@@ -57,5 +64,7 @@ public class Dvd implements Comparable<Dvd>{
         return protagonista;
     }
 
-
+    public String getDirector() {
+        return director;
+    }
 }//fin de la clase

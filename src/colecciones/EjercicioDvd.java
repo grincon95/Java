@@ -43,6 +43,14 @@ public class EjercicioDvd {
             System.out.println(catlogo);
         }
 
+        System.out.println("=================Ordenado por Director creado =====================");
+      OrdenadoPorDirector ordenadoPorDirector=new OrdenadoPorDirector();
+        Collections.sort(peliculas,ordenadoPorDirector);
+
+        for (Dvd catlogo:peliculas) {
+            System.out.println(catlogo);
+        }
+
 
     }//fin del main
 
@@ -50,12 +58,12 @@ public class EjercicioDvd {
 
         public static List llenaspeliculas() {
 
-            Dvd iroman = new Dvd("Iroman", "Ficcion", "Robert Downey");
-            Dvd ipman = new Dvd("Ipman", "Accion", "Donnie Yen");
-            Dvd sinlimites = new Dvd("Sin Limites", "Ficcion", "Bradley Cooper");
-            Dvd iroman2 = new Dvd("Iroman", "Ficcion", "Robert Downey");
-            Dvd ipman2 = new Dvd("Ipman", "Accion", "Donnie Yen");
-            Dvd sinlimites2 = new Dvd("Sin Limites", "Ficcion", "Bradley Cooper");
+            Dvd iroman = new Dvd("Iroman", "Ficcion", "Robert Downey","ABC");
+            Dvd ipman = new Dvd("Ipman", "Accion", "Donnie Yen","abc");
+            Dvd sinlimites = new Dvd("Sin Limites", "Ficcion", "Bradley Cooper","123");
+            Dvd iroman2 = new Dvd("Iroman", "Ficcion", "Robert Downey","12345");
+            Dvd ipman2 = new Dvd("Ipman", "Accion", "Donnie Yen","567");
+            Dvd sinlimites2 = new Dvd("Sin Limites", "Ficcion", "Bradley Cooper","A1b2");
 
             List<Dvd> coleccion=new ArrayList<>();
             coleccion.add(iroman);
