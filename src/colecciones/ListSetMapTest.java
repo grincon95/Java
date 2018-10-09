@@ -40,24 +40,26 @@ public class ListSetMapTest {
         mapa.put("Serch","Sergio Rivera");
         mapa.put("Josman","Jose Manuel Moreno");
         mapa.put("Gera","Gerardo Rincon");
+        mapa.put("Josman","Jose Manuel Moreno Perez");
+        mapa.put("Gera","Gerardo Rincon Palo Alto");
 
-
+        System.out.println("==================================================================== List");
         for (String nickname:lista) {
             System.out.println(nickname);
         }
 
-        System.out.println("====================================================================");
+        System.out.println("==================================================================== Set");
 
         for (String nickname:set) {
             System.out.println(nickname);
 
         }
 
-        System.out.println("====================================================================");
+        System.out.println("==================================================================== Mapa");
 
         for (Entry<String, String> entry:mapa.entrySet()) {
 
-            System.out.println(entry.getKey() + "-"+ entry.getValue());
+            System.out.println("Nickname:" + entry.getKey() +": -- :"+ "Nombre Completo:"+ entry.getValue());
 
         }
 

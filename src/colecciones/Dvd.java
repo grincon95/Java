@@ -1,6 +1,6 @@
 package colecciones;
 
-public class Dvd {
+public class Dvd implements Comparable<Dvd>{
     private String titulo;
     private String genero;
     private String protagonista;
@@ -28,8 +28,19 @@ public class Dvd {
         this.protagonista=protagonista;
     }
 
+    @Override
+    public int compareTo(Dvd o){
+        return titulo.compareTo(o.titulo);
 
+    }
 
+    //Se puede acceder a la variable o al metodo get
+    //Realizamos este metodo para acceder a el valor de las variables
+@Override
+    public String toString(){
+
+        return getTitulo()+"-"+ genero +"-"+ getProtagonista();
+    }
 
 
 
@@ -47,18 +58,4 @@ public class Dvd {
     }
 
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-
-    public void setProtagonista(String protagonista) {
-      this.protagonista=protagonista;
-    }
-
-
-
-}
+}//fin de la clase
