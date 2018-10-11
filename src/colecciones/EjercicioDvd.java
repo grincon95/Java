@@ -43,6 +43,7 @@ public class EjercicioDvd {
             System.out.println(catlogo);
         }
 
+
         System.out.println("=================Ordenado por Director creado =====================");
       OrdenadoPorDirector ordenadoPorDirector=new OrdenadoPorDirector();
         Collections.sort(peliculas,ordenadoPorDirector);

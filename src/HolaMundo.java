@@ -1,12 +1,16 @@
+import EjercicioStatic.Galleta;
 import primeraclase.Auto;
 import primeraclase.Motocicleta;
-import primeraclase.Vehiculo;
 import primeraclase.excepciones.PlacaInvalidaException;
 
 public class HolaMundo  {
 
     public static void main(String[] args) throws Exception
     {
+
+        //Instancia de galleta
+        Galleta galleta=new Galleta();
+
 
         System.out.println("Hola mundo");
 
